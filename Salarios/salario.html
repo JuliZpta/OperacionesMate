@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Salario</title>
+</head>
+<body>
+    <h1>Calculadora de Salario</h1>
+    
+    <form action="jeje.php" method="post">
+        Ingrese su nombre:
+        <input type="text" name="nombre"><br>
+        Ingrese el Valor de la hora trabajada:
+        <input type="text" name="valorhora"><br>
+        Ingrese las Horas Trabajadas:
+        <input type="text" name="horastraba"><br>
+        Seleccione el tipo de deducción:
+        <select name="deduccion">
+            <option value="ninios">Para ninios (5%)</option>
+            <option value="abuelos">Para abuelos (7%)</option>
+            <option value="incapacitados">Para incapacitados (3%)</option>
+        </select><br>
+        <input type="submit" value="Calcular salario">
+    </form>
+</body>
+</html>
