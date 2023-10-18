@@ -1,5 +1,5 @@
 <?php
-function bubbleSort($arr) {
+function ordenacionBurbuja($arr) {
     $n = count($arr);
     for ($i = 0; $i < $n - 1; $i++) {
         for ($j = 0; $j < $n - $i - 1; $j++) {
@@ -17,12 +17,20 @@ function bubbleSort($arr) {
 // Vector de ejemplo con 6 elementos
 $vector = [6, 3, 8, 1, 4, 2];
 
-// Llamar a la función bubbleSort para ordenar el vector
-$vectorOrdenado = bubbleSort($vector);
+// Imprimir el array desordenado
+echo "Array desordenado: ";
+foreach ($vector as $element) {
+    echo $element . " ";
+}
+echo "<br>";
 
-// Imprimir el vector ordenado
-echo "Vector ordenado: ";
+// Llamar a la función ordenacionBurbuja para ordenar el array
+$vectorOrdenado = ordenacionBurbuja($vector);
+
+// Imprimir el array ordenado
+echo "Array ordenado: ";
 foreach ($vectorOrdenado as $element) {
     echo $element . " ";
 }
+echo "<br>";
 ?>
